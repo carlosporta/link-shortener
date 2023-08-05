@@ -1,0 +1,9 @@
+__pycache__
+.pytest_cache
+.ruff_cache
+.venv
+tests
+docker-compose.yml
+.dockerignore
+Dockerfile
+locustfile.py

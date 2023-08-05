@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "url-shortener"
+version = "0.1.0"
+description = ""
+authors = ["Carlos Porta <cmaciasporta@gmail.com>"]
+readme = "README.md"
+packages = [{include = "url_shortener"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+pytest = "^7.4.0"
+ruff = "^0.0.277"
+httpx = "^0.24.1"
+pytest-asyncio = "^0.21.0"
+locust = "^2.15.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode= "auto"
