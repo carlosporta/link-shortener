@@ -1,8 +1,8 @@
 from random import randint
-from locust import HttpUser, task
+from locust import FastHttpUser, task
 
 
-class HelloWorldUser(HttpUser):
+class HelloWorldUser(FastHttpUser):
     count = 0
 
     @task
